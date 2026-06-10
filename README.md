@@ -11,39 +11,10 @@ A command-line tool that uses Claude AI to analyze emails and messages for phish
 - **Safe indicator recognition** to reduce false positives
 - Built-in example messages for quick testing
 
-## Requirements
 
-- Python 3.7+
-- An [Anthropic API key](https://console.anthropic.com/)
+   
 
-## Installation
 
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/your-username/phishing-analyzer.git
-   cd phishing-analyzer
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   pip install anthropic
-   ```
-
-3. **Set your API key**
-
-   ```bash
-   export ANTHROPIC_API_KEY="your-api-key-here"
-   ```
-
-## Usage
-
-Run the script:
-
-```bash
-python phishing_analyzer.py
-```
 
 You'll be prompted to choose an input method:
 
@@ -88,19 +59,3 @@ Pick an option (1/2/3):
   Reason: Domain does not belong to Apple; uses a deceptive subdomain structure.
 ```
 
-## How It Works
-
-1. The message is sent to Claude with a structured prompt requesting a JSON analysis.
-2. Claude returns a verdict, risk score, red flags, suspicious URLs, and safe indicators.
-3. The results are parsed and printed in a formatted, color-coded summary.
-
-## Project Structure
-
-```
-phishing-analyzer/
-└── phishing_analyzer.py   # Main script
-```
-
-## License
-
-MIT
